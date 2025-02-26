@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleatório - Usuário</title>
+    <style>
+        body{
+            background-color: #283949;
+        }
+
+        * {
+            /* background-color: #26333f; */
+        }
+
+        .header { 
+            margin: 20px;
+            color: yellow;
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            font-weight: bold;
+            
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #84aed6; */
+            margin: 20px;
+        }
+
+        .formulario{
+            background-color: #26333f;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgb(0, 0, 0, .3);
+        }
+
+        #form_datetime {
+            /* background: yellow; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        #form_hora {
+            margin-left: 30px;
+
+        }
+
+        .in_datetime {
+            margin-right: 10px;
+        }
+
+        .formulario{
+            padding: 10px;
+            margin: 20px;
+        }
+
+        form{
+            margin: 20px;
+            width: 300px;
+        }
+
+        input{
+            background-color: #283949;
+            color: #ffffff;
+            border-style: hidden;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            box-sizing: border-box;
+
+            margin-top: 5px;
+        }
+
+        label {
+            color: #9796A1;
+            padding-bottom: 5px;
+        }
+
+        #input_local {
+            width: 296px;
+        }
+
+        #input_nome, #input_local{
+            padding: 5px;
+            width: 296px;
+        }
+
+        /* #description{
+            background-color: red;
+            width: 296px;
+            height: 250px;
+            box-sizing: border-box;
+            vertical-align: top;
+            padding: 10px;
+        } */
+
+        #description {
+            background-color: #283949;
+            color: #ffffff;
+            border-style: hidden;
+            border-radius: 5px;
+            outline: none;
+            resize: none; /* Impede o redimensionamento */
+            box-sizing: border-box;
+            padding: 10px;
+            height: auto;
+            width: 296px;
+            vertical-align: top;
+
+            margin-top: 5px;
+        }   
+
+        /* Imagem */
+        #avatar {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            background-color: #D9D9D9;
+            background-image: url("picture 1.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #avatar:hover {
+            background-color: #b8b6b6;
+        }
+
+        .botao {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #save_button {
+            padding: 10px;
+            width: 100px;
+            color: #26333f;
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <header>Novo Rolê</header>
+    </div>
+
+    <div class="box">
+        <div class="formulario">
+            <form action="">
+
+                <div class="upload" id="form_image">
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                </div>
+
+                <div class="in_form" id="form_name">
+                    <br>
+                    <label for="name" id="label_nome">Nome </label><br>
+                    <input type="text" placeholder="Nome do Evento" id="input_nome">
+                </div>
+        
+                <div class="in_form" id="form_datetime">
+                    <div class="in_datetime" id="form_data">
+                        <br>
+                        <label for="dia">Data </label><br>
+                        <input type="date">
+                    </div>
+    
+                    <div class="in_datetime" id="form_hora">
+                        <br>
+                        <label for="hora">Horário </label><br>
+                        <input type="time">
+                    </div>
+                </div>
+        
+                <div id="form_descricao">
+                    <br>
+                    <label for="descricao" >Descrição </label><br>
+                    <textarea type="text" id="description" rows="15" cols="50" placeholder="Descrição"></textarea>
+                </div>
+        
+                <div class="in_form" id="form_local">
+                    <br>
+                    <label for="local">Local </label><br>
+                    <input type="text" id="input_local">
+                </div>
+
+                <div class="in_form" id="form_tag">
+                    <br>
+                    <label for="tag">Tags</label><br>
+                    <input type="text" placeholder="*Opcional*">
+                </div>
+
+                <br>
+                <div class="botao">
+                    <input type="submit" id="save_button" value="Salvar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
