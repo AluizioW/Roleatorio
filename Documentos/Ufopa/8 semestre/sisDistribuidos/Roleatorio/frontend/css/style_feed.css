@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #0099FF;
+}
+
+.event-list{
+    background-color: rgba(0, 0, 0, .0);
+}
+
+.event-box {
+    background-color: #26333f ;
+    color: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    margin: 5px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.event-box:hover {
+    background-color: #1c252e;
+
+    .span{
+        background-color: #1c252e;
+    }
+}
+
+.event-img {
+    margin: 0 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    background-color: aliceblue;
+    background-image: url(https://sesport.es.gov.br/Media/Sesport/Galeria%20de%20Fotos/bola%20de%20v%C3%B4lei%20de%20praia.jpg);
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 12px 5px;
+}
+
+.event-title:hover{
+    cursor: pointer;
+}
+
+.event-summary {
+    font-size: 1rem;
+    font-weight: lighter;
+    height: 80px;
+    padding: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* background-color: yellow; */
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #F2EC3B;
+}
+
+.event-place {
+    /* background-color: red; */
+    padding: 5px;
+    width: 40px;
+    flex: 3;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+
+        
+    /* background-color: #0099FF; */
+}
+
+.event-date-time {
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    width: 40%;
+}
+
+.event-time {
+    /* background-color: #0099FF; */
+    padding: 5px 0;
+
+    text-align: end;
+
+    font-size: 1rem;
+    font-weight: 500;
+    /* background-color: #0099FF; */
+}
+
+.event-date {
+    padding: 5px 0;
+    text-align: end;
+    font-size: 1rem;
+    font-weight: 500;
+    /* background-color: red; */
+}
+
+/* .material-icons-outlined {
+    font-family: 'Material Icons Outlined';
+    font-weight: 100;
+    font-style: normal;
+    font-size: .2px; 
+    display: inline-block;
+    line-height: .1;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    letter-spacing: normal;
+    word-wrap: normal;
+    direction: ltr;
+} */
+
+
+.span {
+    margin-left: 2px;
+    font-size: small;
+    border-style: none;
+    background-color: #26333f;
+    color: lightgray;
+}
+
+
+
+.material-icons-outlined {
+    /* background-color: red;5 */
+    font-size: 15px !important; 
+}

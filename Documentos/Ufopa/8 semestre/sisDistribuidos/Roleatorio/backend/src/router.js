@@ -57,4 +57,4 @@ router.delete('/role/unfavorite', favoriteController.cancelFavorito);
 // tag
 router.get('/tag', tagController.getAll);
 
-module.exports = router; 
+module.exports = router;     
