@@ -5,6 +5,17 @@ const getAll = async (request, response) => {
     return response.status(200).json(eventos);
 };
 
+
+// get event
+const getOne = async (request, response) => {
+    const {id} = request.params;
+    // console.log('id recebido: ', id);
+
+    const evento = await eventModel.getOne(id);
+    // console.log('id retornado: ', id);
+    return response.status(200).json(evento);
+}; 
+ 
 const registerEvento = async(request, response) => {
     const newEvento= await eventModel.registerEvento(request.body);
     return response.status(201).json(newEvento);
@@ -33,6 +44,7 @@ const cancelEvento = async(request, response) => {
 
 module.exports = {
     getAll,
+    getOne,
     registerEvento,
     updateEvento,
     finishEvento,

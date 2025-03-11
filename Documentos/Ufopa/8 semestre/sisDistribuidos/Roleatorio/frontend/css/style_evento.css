@@ -16,6 +16,17 @@ body{
     background-color: #283949;
 }
 
+.btn-back{
+    position: relative;
+    margin: 10px;
+
+    a {
+        text-decoration: none;
+        color: #F2EC3B;
+        font-weight: 500;
+    }
+}
+
 .event-list{
     background-color: rgba(0, 0, 0, .0);
 }
@@ -26,17 +37,17 @@ body{
     border-radius: 8px;
     padding: 20px;
     width: 90%;
-    margin: 10px auto;
+    margin: 5px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 }
 
-.event-box:hover {
+/* .event-box:hover {
     background-color: #1c252e;
 
     .span{
         background-color: #1c252e;
     }
-}
+} */
 
 .event-img {
     margin: 0 0;
@@ -48,7 +59,7 @@ body{
 }
 
 .event-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 12px 5px;
 }
@@ -59,11 +70,14 @@ body{
 
 .event-summary {
     font-size: 1rem;
-    font-weight: lighter;
-    height: 80px;
+    color: lightgray;
+    /* font-weight: lighter; */
+    /* height: 80px; */
+    margin: 12px 0;
     padding: 7px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    line-height: 1.5;
 }
 
 .event-info{
@@ -91,14 +105,21 @@ body{
 
 .event-date-time {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: end;
     /* background-color: yellow; */
-    width: 40%;
+    width: 100%;
 }
 
 .event-time {
+    display: flex;
+    flex-direction: row; 
     /* background-color: #0099FF; */
-    padding: 5px 0;
+    padding: 5px 0 0 30px;
+    /* justify-content: space-between; */
+
+    /* justify-content: start; */
 
     text-align: end;
 
@@ -108,6 +129,10 @@ body{
 }
 
 .event-date {
+    display: flex;
+    flex-direction: row; 
+
+    /* margin-left: 40%; */
     padding: 5px 0;
     text-align: end;
     font-size: 1rem;

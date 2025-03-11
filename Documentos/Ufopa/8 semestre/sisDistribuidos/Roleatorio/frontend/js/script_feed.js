@@ -102,8 +102,15 @@ const createEventBox = (event) => {
 
     limitEventDetails(eventBox);
 
+    eventBox.addEventListener('click', () => {
+        window.location.href = `../frontend/visualizar_evento.html?id=${id}`; 
+    });
+
+    
     return eventBox;
 };
+
+
 
 const loadEvents = async () => {
     const events = await fetchEvents();

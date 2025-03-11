@@ -36,6 +36,7 @@ router.put('/user/:id/delete', userController.deleteUser);
 
 // Eventos
 router.get('/role', eventController.getAll);
+router.get('/role/view/:id', eventController.getOne);
 router.post('/role', eventController.registerEvento);
 router.put('/role/:id',
     validateEventName,

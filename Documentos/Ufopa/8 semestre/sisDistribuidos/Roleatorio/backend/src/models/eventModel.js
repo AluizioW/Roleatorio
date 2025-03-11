@@ -5,6 +5,12 @@ const getAll = async () => {
     return users;
 };
 
+const getOne = async (id) => {
+    const [evento] = await connection.execute('SELECT * FROM eventos WHERE id = ?', [id]);
+    // console.log('Reultado: ', [evento]);
+    return evento[0];
+};
+
 
 const registerEvento = async (evento) => {
     const {nome, descricao, dia, hora, local, idUsuarioPai} = evento;
@@ -39,6 +45,7 @@ const cancelEvento = async (id) => {
 
 module.exports = {
     getAll,
+    getOne,
     registerEvento,
     updateEvento,
     finishEvento,
