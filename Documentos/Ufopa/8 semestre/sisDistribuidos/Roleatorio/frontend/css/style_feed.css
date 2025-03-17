@@ -21,6 +21,7 @@ body{
 }
 
 .event-box {
+    max-width: 500px;
     background-color: #26333f ;
     color: #FFF;
     border-radius: 8px;

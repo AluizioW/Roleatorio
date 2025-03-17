@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit", serif;
+}
+
+body{
+    background-color: #283949;
+}
+
+
+.header { 
+    
+    margin: 20px;
+    margin-top: 40px;
+    font-size: large;
+    color: yellow;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #84aed6; */
+    margin: 20px;
+}
+
+.formulario{
+    background-color: #26333f;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, .3);
+}
+
+#form_datetime {
+    /* background: yellow; */
+    display: flex;
+    flex-direction: row;
+}
+
+#form_hora { 
+    margin-left: 30px;
+
+}
+
+.in_datetime {
+    margin-right: 10px;
+} 
+
+.formulario{
+    padding: 10px;
+    margin: 20px;
+}
+
+form{
+    margin: 20px;
+    width: 300px;
+}
+
+input{
+    background-color: #283949;
+    color: #ffffff;
+    border-style: hidden;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+
+    margin-top: 5px;
+}
+
+label {
+    color: #9796A1;
+    padding-bottom: 5px;
+}
+
+#input_local {
+    width: 296px;
+}
+
+#input_nome, #input_local{
+    padding: 5px;
+    width: 296px;
+}
+
+/* #description{
+    background-color: red;
+    width: 296px;
+    height: 250px;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 10px;
+} */
+
+#description {
+    background-color: #283949;
+    color: #ffffff;
+    border-style: hidden;
+    border-radius: 5px;
+    outline: none;
+    resize: none; /* Impede o redimensionamento */
+    box-sizing: border-box;
+    padding: 10px;
+    height: auto;
+    width: 296px;
+    vertical-align: top;
+
+    margin-top: 5px;
+}   
+
+/* Imagem */
+#avatar {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    background-image: url("picture 1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#avatar:hover {
+    background-color: #b8b6b6;
+}
+
+.botao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#save_button {
+    padding: 10px;
+    width: 100px;
+    color: #26333f;
+    background-color: #ffffff;
+    border-radius: 20px;
+}

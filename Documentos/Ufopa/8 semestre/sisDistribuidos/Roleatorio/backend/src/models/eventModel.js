@@ -18,6 +18,7 @@ const registerEvento = async (evento) => {
     const query = 'INSERT INTO eventos(nome, descricao, dia, hora, local, idUsuarioPai) VALUES (?, ?, ?, ?, ?, ?)';
     const newEvento = await connection.execute(query, [nome, descricao, dia, hora, local, idUsuarioPai]);
 
+
     return newEvento;
 };
 

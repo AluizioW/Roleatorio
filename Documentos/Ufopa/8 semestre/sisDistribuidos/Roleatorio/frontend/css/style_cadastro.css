@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit", serif;
+}
+
+body{
+    background-color: #283949;
+}
+
+
+.header { 
+    margin: 20px;
+    margin-top: 40px;
+    color: yellow;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #84aed6; */
+    margin: 20px;
+}
+
+.formulario{
+    max-width: 500px;
+    background-color: #26333f;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, .3);
+}
+
+#form_datetime {
+    /* background: yellow; */
+    display: flex;
+    flex-direction: row;
+}
+
+#form_hora { 
+    margin-left: 30px;
+
+}
+
+.in_datetime {
+    margin-right: 10px;
+} 
+
+.formulario{
+    padding: 10px;
+    margin: 20px;
+}
+
+form{
+    margin: 20px;
+    width: 300px;
+}
+
+input{
+    background-color: #283949;
+    color: #ffffff;
+    border-style: hidden;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+
+    margin-top: 10px;
+}
+
+label {
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    width: 296px;
+    height: 30px;
+}
+
+
+.botao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#save_button {
+    /* padding: 10px; */
+    width: 100px;
+    color: #26333f;
+    background-color: #ffffff;
+    border-style: none;
+    border-radius: 20px;
+}
+
+.login {
+    font-size: small;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #9796A1;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
