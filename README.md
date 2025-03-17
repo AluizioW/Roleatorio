@@ -31,6 +31,10 @@ https://www.figma.com/design/CFhFtNf4cVa2E9x3JdUP5I/Roleat%C3%B3rio---Sitemas-Di
 ### Modelo do Banco:
 ![Captura de tela de 2025-02-06 03-17-21](https://github.com/user-attachments/assets/3b669017-0f68-41ca-9b69-9b5ebac65340)
 
+### Diagrma:
+![Diagrama Roleatorio - Pacote drawio](https://github.com/user-attachments/assets/aba617fd-2f32-49ab-b666-0dc2b7678398)
+
+
 
 ## Tecnologias Utilizadas
 
@@ -128,24 +132,17 @@ npm run dev
    - Utilize a port do .env.
    - Por exemplo: O servidor estará rodando em [http://localhost:3000](http://localhost:3000).
 
-## Endpoints atuais da API
+## Telas Funcionais
+As telas funcionais atuais abrangem aquelas relacionadas exclusivamente aos eventos (Rolês) sem dados do usuário. A escolha das seguintes telas foi feita visando a entrega do trabalho que, apesar de incompleto, apresenta a esência do projeto. São elas:
+- feed.html
+- visualizar_evento.html
+- cadastrar_evento.html
 
-### Usuários
-- `GET /user/user` → "getAll" retorna usuários.
-- `POST /user` → "registerUser" adiciona usuário ao banco.
-- `PUT /user/:id` → "updateUser" edita informações do usuário.
-- `PUT /users/:id/delete` → "deleteUser" faz exclusão lógica do usuário.
-
-### Eventos
-
-
-### Categorias
-
-
-### Tags
-
-
-### Favoritos
+5. **Alterações Necessárias:**
+ - Cadastro e Login de usuário;
+ - Criação de Evento de um usuaŕio;
+ - Favoritar eventos
+ - Pesquisar eventos
 
 ## Contato
 
