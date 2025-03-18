@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleatório - Usuário</title>
+    <link rel="stylesheet" href="css/style_cadastrar_evento.css">
+</head>
+<body>
+
+    <div class="header">
+        <header>Novo Rolê</header>
+    </div>
+
+    <div class="box">
+        <div class="formulario">
+            <form action="post" class="add-form">
+
+                <div class="upload" id="form_image">
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                </div>
+
+                <div class="in_form" id="form_name">
+                    <br>
+                    <label for="name" id="label_nome">Nome </label><br>
+                    <input type="text" placeholder="Nome do Evento" id="input_nome" class="input-name">
+                </div>
+        
+                <div class="in_form" id="form_datetime">
+                    <div class="in_datetime" id="form_data">
+                        <br>
+                        <label for="dia">Data </label><br>
+                        <input type="date" class="input-date">
+                    </div>
+    
+                    <div class="in_datetime" id="form_hora">
+                        <br>
+                        <label for="hora">Horário </label><br>
+                        <input type="time" class="input-time">
+                    </div>
+                </div>
+        
+                <div id="form_descricao">
+                    <br>
+                    <label for="descricao" >Descrição </label><br>
+                    <textarea type="text" id="description" rows="15" cols="50" placeholder="Descrição" class="input-description"></textarea>
+                </div>
+        
+                <div class="in_form" id="form_local">
+                    <br>
+                    <label for="local">Local </label><br>
+                    <input type="text" id="input_local" class="input-local">
+                </div>
+
+                <div class="in_form" id="form_tag">
+                    <br>
+                    <label for="tag">Tags</label><br>
+                    <input type="text" placeholder="*Opcional*" class="input-tag">
+                </div>
+
+                <br>
+                <div class="botao">
+                    <input type="submit" id="save_button" value="Salvar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script_cadastrar_evento.js"></script>
+</body>
+</html>
